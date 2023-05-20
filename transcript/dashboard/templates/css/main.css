@@ -1,0 +1,35 @@
+
+@media screen and (min-width:992px) {
+    .navbar .container, navbar-expand-lg, navbar-collapse  {
+    flex-direction: column}
+}
+
+
+body {
+    background-color: #E6E6E6
+ !important;
+}
+
+.pagination > span > a:focus,
+.pagination > span > a:hover {
+    color: #ffffff;
+    background-color: ##185a9d;
+    border: 1px solid #6c757d;
+    box-shadow: none;
+}
+
+.dataTables_paginate {
+    margin-top: 10px !important;
+}
+
+.dataTables_filter {
+    margin-bottom: 10px !important;
+}
+.dataTables_length {
+    margin-bottom: 10px !important;
+}
+.dt-buttons{
+    margin-bottom: 10px !important;
+}
+
+
