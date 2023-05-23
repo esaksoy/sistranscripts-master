@@ -19,6 +19,7 @@ class StudentAdmin(ImportExportModelAdmin):
 class ScoreInline(admin.TabularInline):
     model = Score
 
+#edit
 
 
 class YearAdmin(admin.ModelAdmin):
