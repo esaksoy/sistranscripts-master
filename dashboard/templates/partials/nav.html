@@ -1,0 +1,189 @@
+{% load static %}
+
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="http://kit.fontawesome.com/67c66657c7.js"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}?v=1">
+</head>
+
+<body>
+<header class="header">
+  <div class="search-container" style="margin-top: 5px; float: left;">
+    <input class="form-control" id="searchbar" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn" type="submit">
+      <i class="fa fa-search" style="color: #027AFE;"></i>
+    </button>
+  </div>
+  <a href="{% url 'logout' %}"  class="btn btn-outline-success  " style="margin-top: 5px; float: left;">
+    <i class="fa fa-sign-out" style="color: white;"></i>
+  </a>
+</header>
+
+
+<div class="sidebar" style="width: 250px; right: 0;">
+  <div class="logo-container" style="text-align: center; padding-top: 20px;">
+    <img src="../static/dashboard/images/harmony.png" style="width: 250px; height: auto;" alt="">
+  </div>
+
+  <h2></h2>
+  <ol>
+    <li class="active"><a href=#><i class="fa fa-dashboard"></i>Dashboard</a></li>
+    <li style="color: grey;"><a href=#><i class="fa fa-database"></i>Data</a></li>
+    <li style="position: absolute; bottom: 0;"><a href="{% url 'admin:index' %}"><i class="fa fa-cogs"></i>Settings</a></li>
+  </ol>
+</div>
+
+</body>
+
+<style>
+  .header {
+    height: 50px;
+    background: #F4F6F9;    color: #fff;
+    color: #fff;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+  }
+
+.search-logout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.btn-outline-success {
+  color: #fff;
+  background-color: #007bff;
+  padding-bottom: 5px;
+  border-color: #007bff;
+  height: 38px;
+}
+
+
+.btn-logout {
+    position: absolute;
+  margin-left: 10px;
+  width: 20px ;
+  padding-left: 20px;
+}
+
+
+  .sidebar {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: #343A40;
+    color: #fff;
+    width: 100px;
+    left: 0;
+  }
+
+.sidebar h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 300px; /* change this value as needed */
+}
+
+.sidebar ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 300px; /* change this value as needed */
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  text-align: left;
+  width: 300px; /* change this value as needed */
+
+}
+
+.sidebar li a {
+  display: block;
+  color: #fff;
+  padding: 10px;
+  padding-left: 20px;
+  text-decoration: none;
+   background-color: transparent;
+  border-radius: 5px;
+  width: 80%;
+  margin-left: 1.5%;
+  text-align: left;
+
+}
+
+.sidebar li.active a {
+  background-color: #027AFE;
+
+}
+
+.sidebar li:last-child {
+  margin-bottom: 0;
+
+}
+
+.sidebar li:last-child a {
+  margin-bottom: 20px;
+  background-color: #6D767D;
+
+}
+
+
+.sidebar li:first-child {
+  margin-top: 20px;
+
+}
+
+.sidebar li:first-child a {
+  margin-top: 20px;
+
+}
+
+
+  .sidebar li a:hover {
+    background-color: #FFFFFF;
+    color: #96c93d;
+    border-radius: 5px;
+
+  }
+
+  .search-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+  .search-container input {
+  padding-left: 30px;
+}
+
+  .search-container input {
+    padding-left: 30px;
+  }
+
+
+.search-container button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 35px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+  .nav-link {
+    margin-right: 20px;
+  }
+</style>
+
+
+
+
+
+
